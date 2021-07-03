@@ -1,0 +1,6 @@
+const emailField = document.getElementById("email-field");
+emailField.onchange = function() {
+    const emailRegex = /.*@.*\..*/i;
+    const emailValue = emailField.innerText;
+    console.log("yes");
+};

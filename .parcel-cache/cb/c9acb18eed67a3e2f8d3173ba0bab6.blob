@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <title>FRONTEND INTERN TEST</title>
+</head>
+
+<body>
+    <div class="navbar">
+        Company
+        ABOUT
+        HISTORY
+        VISION MISSION
+        OUR WORK
+        OUR TEAM
+        CONTACT
+    </div>
+    <div class="img-slider">
+        TEXT-1: THIS IS A PLACE WHERE TECHNOLOGY & CREATIVITY FUSED INTO DIGITAL CHEMISTRY
+        TEXT-2: WE DON'T HAVE THE BEST BUT WE HAVE THE GREATEST TEAM
+    </div>
+    <div class="values">
+        OUR VALUES
+        <div class="value-box">
+            INNOVATIVE
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo dolorum alias, beatae totam, possimus
+            officia, soluta vero reiciendis corporis rem ab debitis esse odio nam natus nostrum molestias cum numquam.
+        </div>
+        <div class="value-box">
+            LOYALTY
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo dolorum alias, beatae totam, possimus
+            officia, soluta vero reiciendis corporis rem ab debitis esse odio nam natus nostrum molestias cum numquam.
+        </div>
+        <div class="value-box">
+            RESPECT
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo dolorum alias, beatae totam, possimus
+            officia, soluta vero reiciendis corporis rem ab debitis esse odio nam natus nostrum molestias cum numquam.
+        </div>
+    </div>
+    <div class="contact">
+        CONTACT US
+        <input type="text" placeholder="Name">
+        <input type="text" id="email-field" placeholder="Email">
+        <input type="text" placeholder="Message">
+    </div>
+    <script src="7d02a2096947585d8de4ed697a690c49"></script>
+</body>
+
+</html>
