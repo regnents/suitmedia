@@ -1,4 +1,0 @@
-const emailField = document.getElementById("email-field");
-emailField.onchange = function() {
-    console.log("yes");
-};

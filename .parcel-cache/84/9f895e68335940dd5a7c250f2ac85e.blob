@@ -1,5 +1,0 @@
-const emailField = document.getElementById("email-field");
-emailField.onchange = function() {
-    const emailRegex = /x/i;
-    console.log("yes");
-};
