@@ -1,46 +1,67 @@
+<!DOCTYPE html>
 <html>
 
 <head>
     <title>FRONTEND INTERN TEST</title>
+    <link rel="stylesheet" href="./index.css" />
 </head>
 
 <body>
     <div class="navbar">
-        Company
-        ABOUT
-        HISTORY
-        VISION MISSION
-        OUR WORK
-        OUR TEAM
-        CONTACT
+        <div class="navbar-left">
+            Company
+        </div>
+        <div class="navbar-right">
+            <div class="dropdown navbar-item">
+                <div class="dropdown-main">
+                    ABOUT
+                </div>
+                <div class="dropdown-sub">
+                    <div class="dropdown-sub-item">HISTORY</div>
+                    <div class="dropdown-sub-item">VISION MISSION</div>
+                </div>
+            </div>
+            <div class="navbar-item">OUR WORK</div>
+            <div class="navbar-item">OUR TEAM</div>
+            <div class="navbar-item">CONTACT</div>
+        </div>
     </div>
     <div class="img-slider">
-        TEXT-1: THIS IS A PLACE WHERE TECHNOLOGY & CREATIVITY FUSED INTO DIGITAL CHEMISTRY
-        TEXT-2: WE DON'T HAVE THE BEST BUT WE HAVE THE GREATEST TEAM
+        <div id="img1" class="img-slider-area">
+            <img src="../assets/bg.jpg" style="width: 100%;" />
+            <div class="img-slider-text-area">
+                <p>
+                    THIS IS A PLACE WHERE TECHNOLOGY & CREATIVITY FUSED INTO DIGITAL CHEMISTRY
+                </p>
+            </div>
+        </div>
+        <div id="img2" class="img-slider-area">
+            <img src="../assets/about-bg.jpg" style="width: 100%;" />
+            <div class="img-slider-text-area">
+                <p>
+                    WE DON'T HAVE THE BEST BUT WE HAVE THE GREATEST TEAM
+                </p>
+            </div>
+        </div>
     </div>
     <div class="values">
         OUR VALUES
         <div class="value-box">
-            INNOVATIVE
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo dolorum alias, beatae totam, possimus
-            officia, soluta vero reiciendis corporis rem ab debitis esse odio nam natus nostrum molestias cum numquam.
+            INNOVATIVE Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo dolorum alias, beatae totam, possimus officia, soluta vero reiciendis corporis rem ab debitis esse odio nam natus nostrum molestias cum numquam.
         </div>
         <div class="value-box">
-            LOYALTY
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo dolorum alias, beatae totam, possimus
-            officia, soluta vero reiciendis corporis rem ab debitis esse odio nam natus nostrum molestias cum numquam.
+            LOYALTY Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo dolorum alias, beatae totam, possimus officia, soluta vero reiciendis corporis rem ab debitis esse odio nam natus nostrum molestias cum numquam.
         </div>
         <div class="value-box">
-            RESPECT
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo dolorum alias, beatae totam, possimus
-            officia, soluta vero reiciendis corporis rem ab debitis esse odio nam natus nostrum molestias cum numquam.
+            RESPECT Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo dolorum alias, beatae totam, possimus officia, soluta vero reiciendis corporis rem ab debitis esse odio nam natus nostrum molestias cum numquam.
         </div>
     </div>
     <div class="contact">
         CONTACT US
         <input type="text" placeholder="Name" />
-        <input type="text" id="email-field" placeholder="Email" />
+        <input type="text" id="emailField" placeholder="Email" />
         <input type="text" placeholder="Message" />
+        <button type="submit" id="submitButton">SUBMIT</button>
     </div>
     <script src="../src/index.js"></script>
 </body>
