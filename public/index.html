@@ -53,35 +53,59 @@
       </div>
     </div>
     <div class="values">
-      <div class="values-title">OUR VALUES</div>
-      <div class="value-box background-red">
-        <div class="value-box-title">INNOVATIVE</div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-        dolorum alias, beatae totam, possimus officia, soluta vero reiciendis
-        corporis rem ab debitis esse odio nam natus nostrum molestias cum
-        numquam.
-      </div>
-      <div class="value-box background-green">
-        <div class="value-box-title">LOYALTY</div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-        dolorum alias, beatae totam, possimus officia, soluta vero reiciendis
-        corporis rem ab debitis esse odio nam natus nostrum molestias cum
-        numquam.
-      </div>
-      <div class="value-box background-blue">
-        <div class="value-box-title">RESPECT</div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-        dolorum alias, beatae totam, possimus officia, soluta vero reiciendis
-        corporis rem ab debitis esse odio nam natus nostrum molestias cum
-        numquam.
+      <div class="sub-title">OUR VALUES</div>
+      <div class="value-boxes">
+        <div class="value-box background-red">
+          <img src="../assets/lightbulb-o.png" />
+          <div class="value-box-title">INNOVATIVE</div>
+          <div class="value-box-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+            dolorum alias, beatae totam, possimus officia, soluta vero
+            reiciendis corporis rem ab debitis esse odio nam natus nostrum
+            molestias cum numquam.
+          </div>
+        </div>
+        <div class="value-box background-green">
+          <img src="../assets/bank.png" />
+          <div class="value-box-title">LOYALTY</div>
+          <div class="value-box-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+            dolorum alias, beatae totam, possimus officia, soluta vero
+            reiciendis corporis rem ab debitis esse odio nam natus nostrum
+            molestias cum numquam.
+          </div>
+        </div>
+        <div class="value-box background-blue">
+          <img src="../assets/balance-scale.png" />
+          <div class="value-box-title">RESPECT</div>
+          <div class="value-box-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+            dolorum alias, beatae totam, possimus officia, soluta vero
+            reiciendis corporis rem ab debitis esse odio nam natus nostrum
+            molestias cum numquam.
+          </div>
+        </div>
       </div>
     </div>
     <div class="contact">
-      CONTACT US
-      <input type="text " placeholder="Name " />
-      <input type="text " id="emailField" placeholder="Email " />
-      <input type="text " placeholder="Message " />
-      <button type="submit " id="submitButton">SUBMIT</button>
+      <div class="sub-title">CONTACT US</div>
+      <div class="contact-form">
+        <label for="namaField">Name</label>
+        <input type="text " id="namaField" placeholder="Name " />
+        <div class="warning-text">This field is required</div>
+        <label for="emailField">Email</label>
+        <input type="text " id="emailField" placeholder="Email " />
+        <div class="warning-text">Invalid email address</div>
+        <label for="messageField">Message</label>
+        <textarea id="messageField" placeholder="Message"></textarea>
+        <div class="warning-text">This field is required</div>
+        <button type="submit" id="submitButton">SUBMIT</button>
+      </div>
+    </div>
+    <div class="footer">
+      <div>Copyright &copy; 2016. PT Company</div>
+      <img src="../assets/facebook-official.png" />
+      <img src="../assets/twitter.png" />
     </div>
     <script src="../src/index.js "></script>
   </body>

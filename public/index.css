@@ -90,7 +90,7 @@
   left: 10%;
   color: white;
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 1% 1% 1% 1%;
+  padding: 1.25% 5% 1.25% 1%;
   font-size: x-large;
   font-weight: bold;
   max-width: 35%;
@@ -111,10 +111,40 @@
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+.values {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.sub-title {
+  font-size: 23px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.value-boxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .value-box {
   width: 25%;
-  display: inline-block;
+  padding: 2% 1.5%;
+  margin: 0 30px;
   text-align: center;
+  color: white;
+}
+
+.value-box img {
+  margin: 15px;
+}
+
+.value-box img,
+.footer img {
+  height: 30px;
 }
 
 .background-red {
@@ -127,4 +157,42 @@
 
 .background-blue {
   background-color: rgba(86, 150, 194, 1);
+}
+
+.value-box-title {
+  font-weight: 750;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.value-box-desc {
+  font-size: 14px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  /* text-align: left;  */
+}
+
+.warning-text {
+  color: red;
+}
+
+button#submitButton {
+  color: white;
+  background-color: aqua;
+}
+
+.footer {
+  width: 100%;
+  padding-top: 20px;
+  background-color: rgb(51, 51, 51);
+  color: white;
+}
+
+label {
+  display: block;
 }
