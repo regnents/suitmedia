@@ -1,81 +1,88 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>FRONTEND INTERN TEST</title>
     <link rel="stylesheet" href="./index.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <div class="navbar">
-        <div class="navbar-left">
-            Company
+      <div class="navbar-left">Company</div>
+      <div class="navbar-right">
+        <div class="dropdown navbar-item">
+          <div class="dropdown-main">ABOUT</div>
+          <div class="dropdown-sub">
+            <div class="dropdown-sub-item">HISTORY</div>
+            <div class="dropdown-sub-item">VISION MISSION</div>
+          </div>
         </div>
-        <div class="navbar-right">
-            <div class="dropdown navbar-item">
-                <div class="dropdown-main">
-                    ABOUT
-                </div>
-                <div class="dropdown-sub">
-                    <div class="dropdown-sub-item">HISTORY</div>
-                    <div class="dropdown-sub-item">VISION MISSION</div>
-                </div>
-            </div>
-            <div class="navbar-item">OUR WORK</div>
-            <div class="navbar-item">OUR TEAM</div>
-            <div class="navbar-item">CONTACT</div>
-        </div>
+        <div class="navbar-item">OUR WORK</div>
+        <div class="navbar-item">OUR TEAM</div>
+        <div class="navbar-item">CONTACT</div>
+      </div>
     </div>
     <div class="slider">
-        <div class="slides">
-            <img src="../assets/bg.jpg" />
-            <div class="slides-text">
-                <p>
-                    THIS IS A PLACE WHERE TECHNOLOGY & CREATIVITY FUSED INTO DIGITAL CHEMISTRY
-                </p>
-            </div>
+      <div class="slides">
+        <img src="../assets/bg.jpg" />
+        <div class="slides-text">
+          <p>
+            THIS IS A PLACE WHERE TECHNOLOGY & CREATIVITY FUSED INTO DIGITAL
+            CHEMISTRY
+          </p>
         </div>
-        <div class="slides">
-            <img src="../assets/about-bg.jpg" />
-            <div class="slides-text">
-                <p>
-                    WE DON'T HAVE THE BEST BUT WE HAVE THE GREATEST TEAM
-                </p>
-            </div>
+      </div>
+      <div class="slides">
+        <img src="../assets/about-bg.jpg" />
+        <div class="slides-text">
+          <p>WE DON'T HAVE THE BEST BUT WE HAVE THE GREATEST TEAM</p>
         </div>
-        <div class="slides-test-button ">
-            <button id="slidesTestButton">Click me</button>
-        </div>
-        <i class="material-icons" style="z-index: 1;">arrow_back_ios</i>
+      </div>
+      <div id="arrowLeft" class="slider-arrow" style="left: 0">
+        <i class="material-icons" style="color: white; cursor: pointer"
+          >arrow_back_ios</i
+        >
+      </div>
+      <div id="arrowRight" class="slider-arrow" style="right: 0">
+        <i class="material-icons" style="color: white; cursor: pointer"
+          >arrow_forward_ios</i
+        >
+      </div>
     </div>
-    <div class="values ">
-        <div class="values-title">
-            OUR VALUES
-        </div>
-        <div class="value-box background-red">
-
-            <div class="value-box-title">INNOVATIVE</div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo dolorum alias, beatae totam, possimus officia, soluta vero reiciendis corporis rem ab debitis esse odio nam natus nostrum molestias cum numquam.
-        </div>
-        <div class="value-box background-green">
-            <div class="value-box-title">LOYALTY</div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo dolorum alias, beatae totam, possimus officia, soluta vero reiciendis corporis rem ab debitis esse odio nam natus nostrum molestias cum numquam.
-        </div>
-        <div class="value-box background-blue">
-            <div class="value-box-title">RESPECT</div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo dolorum alias, beatae totam, possimus officia, soluta vero reiciendis corporis rem ab debitis esse odio nam natus nostrum molestias cum numquam.
-        </div>
+    <div class="values">
+      <div class="values-title">OUR VALUES</div>
+      <div class="value-box background-red">
+        <div class="value-box-title">INNOVATIVE</div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+        dolorum alias, beatae totam, possimus officia, soluta vero reiciendis
+        corporis rem ab debitis esse odio nam natus nostrum molestias cum
+        numquam.
+      </div>
+      <div class="value-box background-green">
+        <div class="value-box-title">LOYALTY</div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+        dolorum alias, beatae totam, possimus officia, soluta vero reiciendis
+        corporis rem ab debitis esse odio nam natus nostrum molestias cum
+        numquam.
+      </div>
+      <div class="value-box background-blue">
+        <div class="value-box-title">RESPECT</div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+        dolorum alias, beatae totam, possimus officia, soluta vero reiciendis
+        corporis rem ab debitis esse odio nam natus nostrum molestias cum
+        numquam.
+      </div>
     </div>
-    <div class="contact ">
-        CONTACT US
-        <input type="text " placeholder="Name " />
-        <input type="text " id="emailField" placeholder="Email " />
-        <input type="text " placeholder="Message " />
-        <button type="submit " id="submitButton">SUBMIT</button>
+    <div class="contact">
+      CONTACT US
+      <input type="text " placeholder="Name " />
+      <input type="text " id="emailField" placeholder="Email " />
+      <input type="text " placeholder="Message " />
+      <button type="submit " id="submitButton">SUBMIT</button>
     </div>
     <script src="../src/index.js "></script>
-</body>
-
+  </body>
 </html>
