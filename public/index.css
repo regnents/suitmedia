@@ -12,6 +12,7 @@
 }
 
 a {
+  color: inherit;
   text-decoration: none;
 }
 
@@ -20,13 +21,17 @@ a {
   flex-direction: row;
   justify-content: space-between;
   min-height: 50px;
+  width: 90%;
 }
 
 .navbar-left {
   width: 55%;
   font-weight: bold;
-  padding-left: 20%;
   font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .navbar-right {
@@ -34,6 +39,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  font-size: 16px;
 }
 
 .dropdown {
@@ -42,15 +48,21 @@ a {
 }
 
 .dropdown-sub {
+  text-align: center;
   display: none;
   position: absolute;
   width: 100%;
+  top: 100%;
   background-color: white;
   z-index: 1;
 }
 
 .dropdown:hover .dropdown-sub {
   display: block;
+}
+
+.dropdown-sub-item {
+  padding: 2.5px;
 }
 
 .dropdown-sub-item:hover {
@@ -60,7 +72,10 @@ a {
 .navbar-item {
   cursor: pointer;
   width: 25%;
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .navbar-item:hover {
@@ -68,7 +83,7 @@ a {
 }
 
 .slider {
-  width: 100%;
+  width: 100vw;
   height: 95vh;
   position: relative;
 }
@@ -115,6 +130,33 @@ a {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+.slider-arrow-l {
+  left: 0%;
+}
+
+.slider-arrow-r {
+  right: 0%;
+}
+
+.bullet-area {
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.slide-bullet {
+  cursor: pointer;
+  display: inline-block;
+  z-index: 100;
+  margin: 0 5px;
+  width: 25px;
+  height: 25px;
+  background-color: rgb(255, 255, 255);
+  opacity: 50%;
+  border-radius: 50%;
+}
+
 .values {
   display: flex;
   flex-direction: column;
@@ -136,14 +178,47 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
 }
 
 .value-box {
   width: 25%;
   padding: 2% 1.5%;
-  margin: 0 30px;
   text-align: center;
   color: white;
+  border: 2px solid;
+}
+
+.arrow {
+  width: 0;
+  height: 0;
+}
+
+.arrow-red {
+  border-top: 15px solid transparent;
+  border-left: 30px solid rgb(227, 82, 67);
+  border-bottom: 15px solid transparent;
+}
+
+.arrow-green {
+  border-top: 15px solid transparent;
+  border-left: 30px solid rgb(85, 122, 88);
+  border-bottom: 15px solid transparent;
+}
+
+.background-red {
+  background-color: rgba(233, 123, 110, 1);
+  border-color: rgb(227, 82, 67);
+}
+
+.background-green {
+  background-color: rgba(106, 153, 111, 1);
+  border-color: rgb(85, 122, 88);
+}
+
+.background-blue {
+  background-color: rgba(86, 150, 194, 1);
+  border-color: rgb(69, 129, 172);
 }
 
 .value-box img {
@@ -153,18 +228,6 @@ a {
 .value-box img,
 .footer img {
   height: 30px;
-}
-
-.background-red {
-  background-color: rgba(233, 123, 110, 1);
-}
-
-.background-green {
-  background-color: rgba(106, 153, 111, 1);
-}
-
-.background-blue {
-  background-color: rgba(86, 150, 194, 1);
 }
 
 .value-box-title {
@@ -183,7 +246,7 @@ a {
 
 .contact-form {
   position: relative;
-  width: 25%;
+  width: 30%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -191,26 +254,40 @@ a {
 input,
 textarea {
   width: 100%;
+  font-size: 18px;
+  border: 2px solid rgb(211, 211, 211);
+  margin: 0;
+}
+
+input {
+  height: 30px;
 }
 
 textarea {
-  height: 50px;
+  height: 90px;
 }
 
 .warning-text {
   color: red;
-  display: none;
+  visibility: hidden;
+  font-size: 14px;
+  margin-bottom: 5px;
 }
 
 button#submitButton {
+  position: relative;
   color: white;
   background-color: rgb(86, 150, 194);
-  width: 50%;
+  width: 100%;
+  border-color: rgb(86, 150, 194);
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 18px;
 }
 
 .footer {
   width: 100%;
-  padding-top: 20px;
+  padding: 20px 0;
   background-color: rgb(51, 51, 51);
   color: white;
   text-align: center;
@@ -218,5 +295,25 @@ button#submitButton {
 
 .footer img {
   margin: 5px;
-  /* cursor: pointer; */
+}
+
+@media only screen and(max-width: 1140px) {
+  .navbar-left {
+    width: 50%;
+  }
+  .navbar-right {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    width: 100%;
+  }
+  .navbar-left {
+    width: 40%;
+  }
+  .navbar-right {
+    width: 60%;
+  }
 }

@@ -9,12 +9,21 @@ const messageWarning = document.getElementById("messageWarning");
 const submitButton = document.getElementById("submitButton");
 
 const slides = document.getElementsByClassName("slides");
+const bullets = document.getElementsByClassName("slide-bullet");
 
 const activateSlide = (n) => {
   for (let i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
+    bullets[i].style.opacity = 0.5;
   }
   slides[n].style.display = "block";
+  bullets[n].style.opacity = 1;
+};
+
+const bulletSlide = (n) => {
+  console.log("yuhu");
+  slideActive = n;
+  activateSlide(slideActive);
 };
 
 const changeSlideActive = (n) => {
@@ -27,7 +36,6 @@ const changeSlideActive = (n) => {
 };
 
 const isFieldEmpty = (teks) => {
-  console.log("masuk func");
   return !teks || (teks = "");
 };
 
@@ -36,38 +44,62 @@ const isEmailValid = (teks) => {
   return emailRegex.test(teks);
 };
 
+const checkNameField = () => {
+  if (isFieldEmpty(nameField.value)) {
+    nameField.style.borderColor = "red";
+    nameWarning.style.visibility = "visible";
+    return false;
+  } else {
+    nameField.style.borderColor = "rgb(211,211,211)";
+    nameWarning.style.visibility = "hidden";
+    return true;
+  }
+};
+
+const checkEmailField = () => {
+  if (!isEmailValid(emailField.value)) {
+    emailField.style.borderColor = "red";
+    emailWarning.style.visibility = "visible";
+    return false;
+  } else {
+    emailField.style.borderColor = "rgb(211,211,211)";
+    emailWarning.style.visibility = "hidden";
+    return true;
+  }
+};
+
+const checkMessageField = () => {
+  if (isFieldEmpty(messageField.value)) {
+    messageField.style.borderColor = "red";
+    messageWarning.style.visibility = "visible";
+    return false;
+  } else {
+    messageField.style.borderColor = "rgb(211,211,211)";
+    messageWarning.style.visibility = "hidden";
+    return true;
+  }
+};
+
+const checkAllField = () => {
+  const a = checkNameField();
+  const b = checkEmailField();
+  const c = checkMessageField();
+  return a && b && c;
+};
+
 let slideActive = 0;
 activateSlide(slideActive);
 
 nameField.onblur = () => {
-  console.log("yes");
-  if (isFieldEmpty(nameField.value)) {
-    nameField.style.borderColor = "red";
-    nameWarning.style.display = "block";
-  } else {
-    nameField.style.borderColor = "black";
-    nameWarning.style.display = "none";
-  }
+  checkNameField();
 };
 
 emailField.onblur = () => {
-  if (!isEmailValid(emailField.value)) {
-    emailField.style.borderColor = "red";
-    emailWarning.style.display = "block";
-  } else {
-    emailField.style.borderColor = "black";
-    emailWarning.style.display = "none";
-  }
+  checkEmailField();
 };
 
 messageField.onblur = () => {
-  if (isFieldEmpty(messageField.value)) {
-    messageField.style.borderColor = "red";
-    messageWarning.style.display = "block";
-  } else {
-    messageField.style.borderColor = "black";
-    messageWarning.style.display = "none";
-  }
+  checkMessageField();
 };
 
 leftArrow.onclick = () => {
@@ -80,6 +112,14 @@ rightArrow.onclick = () => {
   activateSlide(slideActive);
 };
 
-submitButton.onsubmit = (event) => {
-  event.preventDefault();
+submitButton.onclick = () => {
+  if (checkAllField()) {
+    window.location.href = window.location.href;
+  }
 };
+
+for (let i = 0; i < bullets.length; i++) {
+  bullets[i].onclick = () => {
+    bulletSlide(i);
+  };
+}

@@ -11,7 +11,9 @@
 
   <body>
     <div class="navbar">
-      <div class="navbar-left">Company</div>
+      <div class="navbar-left">
+        <a href="#"> Company </a>
+      </div>
       <div class="navbar-right">
         <div class="dropdown navbar-item">
           <div class="dropdown-main">ABOUT</div>
@@ -41,15 +43,23 @@
           <p>WE DON'T HAVE THE BEST BUT WE HAVE THE GREATEST TEAM</p>
         </div>
       </div>
-      <div id="arrowLeft" class="slider-arrow" style="left: 0">
-        <i class="material-icons" style="color: white; cursor: pointer"
+      <div id="arrowLeft" class="slider-arrow slider-arrow-l">
+        <i
+          class="material-icons"
+          style="color: white; cursor: pointer; font-size: 50px"
           >arrow_back_ios</i
         >
       </div>
-      <div id="arrowRight" class="slider-arrow" style="right: 0">
-        <i class="material-icons" style="color: white; cursor: pointer"
+      <div id="arrowRight" class="slider-arrow slider-arrow-r">
+        <i
+          class="material-icons"
+          style="color: white; cursor: pointer; font-size: 50px"
           >arrow_forward_ios</i
         >
+      </div>
+      <div class="bullet-area">
+        <span class="slide-bullet"></span>
+        <span class="slide-bullet"></span>
       </div>
     </div>
     <div class="values component">
@@ -65,6 +75,7 @@
             molestias cum numquam.
           </div>
         </div>
+        <div class="arrow arrow-red"></div>
         <div class="value-box background-green">
           <img src="../assets/bank.png" />
           <div class="value-box-title">LOYALTY</div>
@@ -75,6 +86,7 @@
             molestias cum numquam.
           </div>
         </div>
+        <div class="arrow arrow-green"></div>
         <div class="value-box background-blue">
           <img src="../assets/balance-scale.png" />
           <div class="value-box-title">RESPECT</div>
@@ -91,13 +103,13 @@
       <div class="sub-title">CONTACT US</div>
       <div class="contact-form">
         <label for="nameField">Name</label>
-        <input type="text " id="nameField" placeholder="Name " />
+        <input type="text " id="nameField" />
         <div class="warning-text" id="nameWarning">This field is required</div>
         <label for="emailField">Email</label>
-        <input type="text " id="emailField" placeholder="Email " />
+        <input type="text " id="emailField" />
         <div class="warning-text" id="emailWarning">Invalid email address</div>
         <label for="messageField">Message</label>
-        <textarea id="messageField" placeholder="Message"></textarea>
+        <textarea id="messageField"></textarea>
         <div class="warning-text" id="messageWarning">
           This field is required
         </div>
