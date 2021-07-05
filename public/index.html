@@ -52,7 +52,7 @@
         >
       </div>
     </div>
-    <div class="values">
+    <div class="values component">
       <div class="sub-title">OUR VALUES</div>
       <div class="value-boxes">
         <div class="value-box background-red">
@@ -87,25 +87,31 @@
         </div>
       </div>
     </div>
-    <div class="contact">
+    <div class="contact component">
       <div class="sub-title">CONTACT US</div>
       <div class="contact-form">
-        <label for="namaField">Name</label>
-        <input type="text " id="namaField" placeholder="Name " />
-        <div class="warning-text">This field is required</div>
+        <label for="nameField">Name</label>
+        <input type="text " id="nameField" placeholder="Name " />
+        <div class="warning-text" id="nameWarning">This field is required</div>
         <label for="emailField">Email</label>
         <input type="text " id="emailField" placeholder="Email " />
-        <div class="warning-text">Invalid email address</div>
+        <div class="warning-text" id="emailWarning">Invalid email address</div>
         <label for="messageField">Message</label>
         <textarea id="messageField" placeholder="Message"></textarea>
-        <div class="warning-text">This field is required</div>
+        <div class="warning-text" id="messageWarning">
+          This field is required
+        </div>
         <button type="submit" id="submitButton">SUBMIT</button>
       </div>
     </div>
-    <div class="footer">
+    <div class="footer component">
       <div>Copyright &copy; 2016. PT Company</div>
-      <img src="../assets/facebook-official.png" />
-      <img src="../assets/twitter.png" />
+      <a href="https://www.facebook.com">
+        <img src="../assets/facebook-official.png" />
+      </a>
+      <a href="https://www.twitter.com">
+        <img src="../assets/twitter.png" />
+      </a>
     </div>
     <script src="../src/index.js "></script>
   </body>
