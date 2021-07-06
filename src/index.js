@@ -1,3 +1,4 @@
+// CONSTANT
 const leftArrow = document.getElementById("arrowLeft");
 const rightArrow = document.getElementById("arrowRight");
 const nameField = document.getElementById("nameField");
@@ -11,6 +12,7 @@ const submitButton = document.getElementById("submitButton");
 const slides = document.getElementsByClassName("slides");
 const bullets = document.getElementsByClassName("slide-bullet");
 
+// FUNCTION
 const activateSlide = (n) => {
   for (let i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
@@ -87,9 +89,7 @@ const checkAllField = () => {
   return a && b && c;
 };
 
-let slideActive = 0;
-activateSlide(slideActive);
-
+// EVENT LISTENER
 nameField.onblur = () => {
   checkNameField();
 };
@@ -123,3 +123,7 @@ for (let i = 0; i < bullets.length; i++) {
     bulletSlide(i);
   };
 }
+
+// ADDITIONAL VARIABLE & FUNCTION CALLING
+let slideActive = 0;
+activateSlide(slideActive);
