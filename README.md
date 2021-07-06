@@ -9,8 +9,6 @@ A prototype for some company landing page. Created using HTML, CSS, and JavaScri
 </ul>
 
 ### STEPS BY STEPS FOR DEVELOPMENT SERVER
-<ol>
-<li>Open command prompt in the directory, install all the dependencies from `package.json` by running `npm install` in the command prompt</li>
-<li>Run `yarn start` to start local development server</li>
-<li>Open the page using your browser in `localhost:1235`</li>
-</ol>
+1. Open command prompt in the directory, install all the dependencies from `package.json` by running `npm install` in the command prompt</li>
+2. Run `yarn start` to start local development server</li>
+3. Open the page using your browser in `localhost:1235`</li>
